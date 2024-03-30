@@ -1,0 +1,180 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "young-serif";
+  src: url(recipe-page-main/recipe-page-main/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: "outfit";
+  src: url(recipe-page-main/recipe-page-main/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+:root {
+  /* primary colors */
+  --nutmeg: hsl(14, 45%, 36%);
+  --dark-raspberry: hsl(332, 51%, 32%);
+
+  /* neutral */
+  --white: hsl(0, 0%, 100%);
+  --rose-white: hsl(330, 100%, 98%);
+  --eggshell: hsl(30, 54%, 90%);
+  --light-grey: hsl(30, 18%, 87%);
+  --wenge-brown: hsl(30, 10%, 34%);
+  --dark-charcoal: hsl(24, 5%, 18%);
+}
+
+/* utilities */
+
+.title-font {
+  font-family: "young-serif";
+}
+
+.divider {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+span {
+  font-weight: bold;
+}
+
+.wenge-brown {
+  color: var(--wenge-brown);
+}
+
+.nutmeg {
+  color: var(--nutmeg);
+}
+
+.rounded {
+  border-radius: 20px;
+}
+
+/* custom */
+
+body {
+  font-family: outfit;
+}
+
+.image-heading {
+  overflow: hidden;
+}
+
+.image-heading img {
+  width: 100%;
+  overflow: hidden;
+}
+
+main {
+  padding: 1rem;
+}
+
+.recipe-title {
+  margin: 1rem 0;
+}
+
+.preparation {
+  margin: 2rem 0;
+  padding: 1rem;
+  background-color: var(--rose-white);
+}
+
+.preparation-title {
+  color: var(--dark-raspberry);
+}
+
+.preparation ul {
+  padding: 1rem 2rem;
+}
+
+.preparation ul li:marker {
+  color: var(--dark-raspberry);
+}
+
+.preparation ul li {
+  padding: 0.5rem;
+}
+
+.ingridients {
+  padding-bottom: 1rem;
+}
+
+.ingridients ul {
+  padding: 0 2rem;
+}
+
+.ingridients ul li {
+  padding: 0.5rem;
+}
+
+.ingridients ul li::marker {
+  color: var(--nutmeg);
+}
+
+.instructions {
+  padding: 1rem 0;
+}
+
+.instructions ol {
+  padding: 0 2rem;
+}
+
+.instructions ol li {
+  padding: 0.5rem;
+}
+
+.instructions ol li::marker {
+  color: var(--nutmeg);
+  font-weight: bold;
+}
+
+.nutrition {
+  padding: 1rem 0;
+}
+
+.nutrition-description {
+  padding: 1rem 0;
+}
+
+.nutrition table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.nutrition table tr {
+  border-bottom: 1px solid var(--light-grey);
+}
+
+.nutrition table tr:last-child {
+  border-bottom: none;
+}
+.nutrition table tr td {
+  padding: 1rem 1.5rem;
+}
+
+.nutrition table tr td:nth-child(1) {
+  color: var(--wenge-brown);
+}
+
+.nutrition table tr td:nth-child(2) {
+  color: var(--nutmeg);
+  font-weight: bold;
+}
+
+@media (min-width: 1200px) {
+  body {
+    background-color: var(--eggshell);
+    padding: 3rem 0;
+  }
+
+  .content {
+    width: 50%;
+    margin: 0 auto;
+    background-color: white;
+    padding: 3rem 3rem 0 3rem;
+  }
+}
