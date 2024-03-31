@@ -177,4 +177,8 @@ main {
     background-color: white;
     padding: 3rem 3rem 0 3rem;
   }
+
+  .image-heading {
+    border-radius: 20px;
+  }
 }
